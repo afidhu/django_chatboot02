@@ -8,17 +8,36 @@ AI-powered campus academic assistant using **Django + PostgreSQL (pgvector) + Sm
 
 ### 1. Clone the Repository
 
-```bash
+# 1. Clone the Repository
 git clone https://github.com/your-username/project-name.git
 cd project-name
 
+# 2. Create Virtual Environment
 python -m venv venv
-# Windows
+
+# Windows activate
 venv\Scripts\activate
-# Mac/Linux
+
+# Mac/Linux activate
 source venv/bin/activate
 
+# 3. Install Dependencies
+pip install -r requirements.txt
+
+# 4. Setup Database
+# - Ensure PostgreSQL is installed and running
+# - Create a database named campus_academic_db
+# - Update settings.py with your database credentials
+
+# 5. Run Migrations
 python manage.py makemigrations
 python manage.py migrate
-python manage.py createsuperuser
+
+# 6. Start Django Server
 python manage.py runserver
+
+# 7. Start SmolLM API locally
+ollama serve
+
+# 8. Test model generation (stream mode)
+ollama generate smollm2:1.7b "Hello, AI assistant!" --stream
