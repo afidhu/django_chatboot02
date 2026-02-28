@@ -9,7 +9,7 @@ AI-powered campus academic assistant using **Django + PostgreSQL (pgvector) + Sm
 ### 1. Clone the Repository
 
 # 1. Clone the Repository
-git clone https://github.com/your-username/project-name.git
+git clone https://github.com/afidhu/django_chatboot02.git
 cd project-name
 
 # 2. Create Virtual Environment
