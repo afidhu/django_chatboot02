@@ -1,4 +1,4 @@
-# Campus Academic Announcement Platform
+# Campus Academic Registeration Platform
 
 AI-powered campus academic assistant using **Django + PostgreSQL (pgvector) + SmolLM (Ollama)**.
 
@@ -36,8 +36,16 @@ python manage.py migrate
 # 6. Start Django Server
 python manage.py runserver
 
-# 7. Start SmolLM API locally
+# 7. Install Ollama models (types)
+ollama install smollm2:1.7b
+# Add more models if needed
+# ollama install <model_name>:<version>
+
+# 8. List all installed Ollama models
+ollama list
+# 9. Start SmolLM API locally
 ollama serve
 
-# 8. Test model generation (stream mode)
+
+# 10. Test model generation (stream mode)
 ollama generate smollm2:1.7b "Hello, AI assistant!" --stream
