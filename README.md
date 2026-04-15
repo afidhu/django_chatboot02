@@ -49,3 +49,7 @@ ollama serve
 
 # 10. Test model generation (stream mode)
 ollama generate smollm2:1.7b "Hello, AI assistant!" --stream
+
+
+
+now development activities has been pause ⏸️ 
